@@ -1,0 +1,19 @@
+==========================================================================
+================ RUN EMR =================================================
+==========================================================================
+> cd ~/EMR/network
+	> sudo ./byfn.sh down && docker ps -aq && docker images dev-* -q
+> cd ~/EMR/server
+	> sudo ./startFabric.sh
+	> cd javascript
+		> rm -rf wallet && node enrollAdmin.js && node registerUser.js && node apiserver.js
+
+
+Truy vấn: Open new terminal
+
+- curl http://127.0.0.1:5000/api/queryallbn
+- curl http://127.0.0.1:5000/api/query/BN1
+- curl -d '{"hoten":"Nguyễn Triều Vương"}' -H "Content-Type: application/json" -X PUT http://127.0.0.1:5000/api/changebn/BN1
+
+- curl -d '{"bnid":"BN12","mabn": "2020083148","hoten": "Nguyễn Thị Hồng Hoa","ngaysinh": "28/08/1955","gioitinh": "Nữ","cmnd": " ","diachi": "80/28 PNL, Phường An Hòa, Quận Ninh Kiều, Thành phố Cần Thơ"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/api/addbn
+
