@@ -31,4 +31,5 @@ http://127.0.0.1:5000/api/addbn
     "cmnd": "abc",
     "diachi": "80/28 PNL, Phường An Hòa, Quận Ninh Kiều, Thành phố Cần Thơ",
     "maxa": "9291831177"
+}
 
