@@ -91,29 +91,7 @@ func (s *SmartContract) queryBN(APIstub shim.ChaincodeStubInterface, args []stri
 }
 
 func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Response {
-	/*
-		bns := []BenhNhan{
-				BenhNhan{Mabn:"2020083198",Hoten:"Nguyễn Thị Mỹ Hương",Ngaysinh:"01/01/1969",Gioitinh:"Nữ",Cmnd:"",Diachi:"Phường An Thới, Quận Bình Thuỷ, Cần Thơ",Maxa:"9291831177"},
-				BenhNhan{Mabn:"2020083191",Hoten:"Nguyễn Thị Sáu",Ngaysinh:"01/01/1939",Gioitinh:"Nữ",Cmnd:"",Diachi:"Phú Thạnh, Xã Long Phú, Huyện Tam Bình, Tỉnh Vĩnh Long",Maxa:"8686000000"},
-				BenhNhan{Mabn:"2020083154",Hoten:"Đặng Thị Tám",Ngaysinh:"01/01/1951",Gioitinh:"Nữ",Cmnd:"",Diachi:"ấp thới hòa c, Xã Thới Xuân, Huyện Cờ Đỏ, Thành phố Cần Thơ",Maxa:"9292531277"},
-				BenhNhan{Mabn:"2020083148",Hoten:"Nguyễn Thị Hồng Hoa",Ngaysinh:"28/08/1955",Gioitinh:"Nữ",Cmnd:"",Diachi:"80/28 PNL, Phường An Hòa, Quận Ninh Kiều, Thành phố Cần Thơ",Maxa:"9291631120"},
-				BenhNhan{Mabn:"2020083138",Hoten:"Nguyễn Văn Dũng",Ngaysinh:"01/01/1957",Gioitinh:"Nam",Cmnd:"",Diachi:"ấp Phú Sơn C, Xã Long Phú, Huyện Tam Bình, Vĩnh Long",Maxa:"8686029752"},
-				BenhNhan{Mabn:"2020083137",Hoten:"Nguyễn Quỳnh",Ngaysinh:"01/01/1940",Gioitinh:"Nam",Cmnd:"",Diachi:"KV Tân Lợi 2, Phường Tân Hưng, Quận Thốt Nốt, Thành phố Cần Thơ",Maxa:"9292331227"},
-				BenhNhan{Mabn:"2020083131",Hoten:"Trần Hùng Sơn",Ngaysinh:"01/01/1968",Gioitinh:"Nam",Cmnd:"",Diachi:"Ấp Thạnh Lộc 2, Xã Trung An, Huyện Cờ Đỏ, Thành phố Cần Thơ",Maxa:"9292531222"},
-				BenhNhan{Mabn:"2020083105",Hoten:"Nguyễn Thị Tư",Ngaysinh:"01/01/1942",Gioitinh:"Nữ",Cmnd:"",Diachi:"172/5 - Nguyễn Việt Hồng, Phường An Phú, Quận Ninh Kiều, Thành phố Cần Thơ",Maxa:"9291600000"},
-				BenhNhan{Mabn:"2020083104",Hoten:"Nguyễn Thị Điếu",Ngaysinh:"01/01/1941",Gioitinh:"Nữ",Cmnd:"",Diachi:"Kv Thới Đông, Phường Phước Thới, Quận Ô Môn, Thành phố Cần Thơ",Maxa:"9291731162"},
-				BenhNhan{Mabn:"2020083058",Hoten:"Đỗ Thị Gạo",Ngaysinh:"18/01/1933",Gioitinh:"Nữ",Cmnd:"",Diachi:"43/18/15 PNL, Phường Thới Bình, Quận Ninh Kiều, Thành phố Cần Thơ",Maxa:"9291600000"},
-		}
 
-		i := 0
-		for i < len(bns) {
-			fmt.Println("i is ", i)
-			bnAsBytes, _ := json.Marshal(bns[i])
-			APIstub.PutState("BN"+strconv.Itoa(i), bnAsBytes)
-			fmt.Println("Added", bns[i])
-			i = i + 1
-		}
-	*/
 	return shim.Success(nil)
 }
 
